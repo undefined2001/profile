@@ -82,7 +82,7 @@ code,
 
 .logo {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--accent-primary);
     text-decoration: none;
     display: flex;
@@ -249,5 +249,12 @@ section {
     transform-origin: left;
     transition: transform 1s ease;
 }
+
+@media (max-width: 768px) {
+    .logo{
+        font-size: 1.2rem;
+    }
+}
+
 
 /*Education Section*/
