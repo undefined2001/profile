@@ -8,14 +8,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Toggle the visibility of the navigation and overlay
         navLinks.setAttribute('data-visible', !isVisible);
-        overlay.style.display = isVisible ? 'none' : 'block';
+        if (overlay) { overlay.style.display = isVisible ? 'none' : 'block'; }
     });
 
     // Close the menu when overlay is clicked
-    overlay.addEventListener('click', () => {
-        navLinks.setAttribute('data-visible', 'false');
-        overlay.style.display = 'none';
-    });
+    if (overlay) {
+        overlay.addEventListener('click', () => {
+            // navLinks.setAttribute('data-visible', 'false');
+            // overlay.style.display = 'none';
+        });
+    }
+
 });
 
 

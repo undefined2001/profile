@@ -77,7 +77,7 @@
     z-index: 1000;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1032px) {
     .mobile-nav-toggle {
         display: block;
     }
