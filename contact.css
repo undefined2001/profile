@@ -1,0 +1,63 @@
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px 1rem;
+    border-top: 1px solid rgba(0, 255, 157, 0.1);
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    /* Ensure responsiveness */
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.contact-link {
+    color: var(--text-primary);
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--card-bg);
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    flex: 1;
+    /* Grow equally */
+    max-width: 200px;
+    /* Limit width on large screens */
+}
+
+.contact-link i {
+    font-size: 1.5rem;
+}
+
+.contact-link:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    color: var(--bg-primary);
+}
+
+@media (max-width: 768px) {
+    .contact-links {
+        flex-direction: column;
+        /* Stack links on smaller screens */
+    }
+
+    .contact-link {
+        max-width: 100%;
+        /* Make links full-width */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-link {
+        font-size: 0.9rem;
+        /* Adjust font size for very small screens */
+        padding: 0.5rem;
+    }
+
+}

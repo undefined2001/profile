@@ -1,0 +1,80 @@
+/* Research Section */
+.research {
+    padding: 100px 1rem;
+    background: var(--bg-primary);
+    text-align: center;
+}
+
+.research-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.research-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid rgba(0, 255, 157, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: left;
+}
+
+.research-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-primary);
+}
+
+.research-card h3 {
+    font-size: 1.2rem;
+    color: var(--accent-secondary);
+    margin-bottom: 1rem;
+}
+
+.research-card p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Research Links */
+.research-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.research-link i {
+    font-size: 1.2rem;
+    color: var(--accent-secondary);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.research-link:hover {
+    color: var(--accent-secondary);
+}
+
+.research-link:hover i {
+    transform: scale(1.1);
+    color: var(--accent-primary);
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .research-card {
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .research-card h3 {
+        font-size: 1rem; /* Reduce title font size */
+    }
+}

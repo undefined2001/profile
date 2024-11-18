@@ -1,0 +1,68 @@
+.hero {
+    min-height: 100vh;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space out the text and image */
+    padding: 2rem 1rem; /* Add padding for spacing */
+    gap: 2rem; /* Add spacing between the text and image */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px; /* Restrict text width for readability */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem); /* Responsive text size */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.hero-image-container {
+    max-width: 400px; /* Restrict image container width */
+    flex: 1; /* Ensure it scales with the layout */
+    text-align: center; /* Center-align image */
+}
+
+.hero-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for style */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hero-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 3rem;
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center; /* Center-align content */
+    }
+
+    .hero-content {
+        max-width: 100%; /* Allow text to stretch fully on small screens */
+    }
+
+    .hero-image-container {
+        max-width: 270px; /* Reduce image size on small screens */
+    }
+}
