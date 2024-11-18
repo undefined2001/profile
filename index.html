@@ -354,6 +354,8 @@
         }
 
         @media (max-width: 768px) {
+
+
             .mobile-nav-toggle {
                 display: block;
             }
@@ -362,8 +364,11 @@
                 position: fixed;
                 inset: 0 0 0 30%;
                 background: var(--bg-secondary);
+                height: 100vh;
                 flex-direction: column;
-                padding: min(20vh, 10rem) 2rem;
+                /* justify-content: center; */
+                align-items: center;
+                padding: min(10vh, 10rem) 2rem;
                 transform: translateX(100%);
                 transition: transform 350ms ease-out;
             }
@@ -565,6 +570,29 @@
         </div>
     </section>
     <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.querySelector('.mobile-nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const overlay = document.querySelector('.overlay');
+
+            toggleButton.addEventListener('click', () => {
+                const isVisible = navLinks.getAttribute('data-visible') === 'true';
+
+                // Toggle the visibility of the navigation and overlay
+                navLinks.setAttribute('data-visible', !isVisible);
+                overlay.style.display = isVisible ? 'none' : 'block';
+            });
+
+            // Close the menu when overlay is clicked
+            overlay.addEventListener('click', () => {
+                navLinks.setAttribute('data-visible', 'false');
+                overlay.style.display = 'none';
+            });
+        });
+
+
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
