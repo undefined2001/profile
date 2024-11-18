@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css//navbar.css">
     <link rel="stylesheet" href="css/education.css">
     <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="css/contact.css">
@@ -20,6 +21,7 @@
 <body>
     <div class="circuit-pattern"></div>
 
+    <!----------------------------------------------Navbar Section Starts From Here---------------------------------->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#home" class="logo">
@@ -40,7 +42,9 @@
             </ul>
         </div>
     </nav>
+    <!----------------------------------------------Navbar Section Ends Here---------------------------------->
 
+    <!----------------------------------------------Main Hero Conftent Section Starts From Here---------------------------------->
     <section id="home" class="hero">
         <div class="hero-content font-jetbrain">
             <h1>Embedded Systems Engineer</h1>
@@ -52,8 +56,9 @@
             <img src="assets/taj.jpeg" alt="Profile Image" class="hero-image">
         </div>
     </section>
+    <!----------------------------------------------Main Hero Conftent Section Ends Here---------------------------------->
 
-
+    <!----------------------------------------------Skills Section Starts From Here---------------------------------->
     <section id="skills">
         <h2 class="section-title font-jetbrain">Technical Skills</h2>
         <div class="skills-grid">
@@ -208,6 +213,90 @@
             </div>
         </div>
     </section>
+    <!----------------------------------------------Skills Section Ends Here---------------------------------->
+
+
+    <!----------------------------------------------Project Section Starts From Here---------------------------------->
+    <section id="projects" class="projects-section font-jetbrain">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="assets/embedded.png" alt="Project Image 1" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Baremetal Driver Development</h3>
+                    <p class="project-description">This Project Contains the Process of Writing own Driver for
+                        ARM-Cortex M Microcontrollers</p>
+                    <a href="https://github.com/undefined2001/stmbaremetal.git" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/free-rtos.png" style="background-color: white;" alt="Project Image 2"
+                    class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Baremetal Driver & FreeRTOS</h3>
+                    <p class="project-description">This Projects contains all the necessary information for getting
+                        started with FreeRTOS</p>
+                    <a href="https://github.com/undefined2001/STM32F466RE_RTOS.git" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/tft.png" alt="Project Image 2" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">TFT Display Driver</h3>
+                    <p class="project-description">This projects contains all the necessary API's to use a ST7735 TFT
+                        Display.</p>
+                    <a href="https://github.com/undefined2001/TFT_Driver.git" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------Project Section Ends Here---------------------------------->
+
+    <!----------------------------------------------Project Section Starts From Here---------------------------------->
+    <section id="research" class="research font-jetbrain">
+        <h2 class="section-title">Researches</h2>
+        <div class="research-grid">
+            <div class="research-card">
+                <h3>Efficient Power Management in IoT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, placeat ducimus. Accusantium animi
+                    quisquam ipsum quis illo iste. Ipsa veniam illum qui nemo! Itaque minima totam nobis, voluptates
+                    ratione est.</p>
+                <a href="https://ieee-iot.org/example" class="research-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-link"></i> View Research
+                </a>
+            </div>
+            <div class="research-card">
+                <h3>Real-Time Embedded Systems</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde ad officia non quae culpa
+                    quisquam obcaecati nulla provident placeat, distinctio iure ut quibusdam asperiores dolore aliquam
+                    aperiam sit maxime.</p>
+                <a href="https://esc-conf.org/example" class="research-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-link"></i> View Research
+                </a>
+            </div>
+            <div class="research-card">
+                <h3>Security in Embedded Systems</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, placeat ducimus. Accusantium animi
+                    quisquam ipsum quis illo iste. Ipsa veniam illum qui nemo! Itaque minima totam nobis, voluptates
+                    ratione est.</p>
+                <a href="https://acm-tec.com/example" class="research-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-link"></i> View Research
+                </a>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------Research Section Ends Here---------------------------------->
+
+
+    <!----------------------------------------------Education Section Starts From Here---------------------------------->
     <section id="education">
         <h2 class="section-title font-jetbrain">Education</h2>
         <div class="education-container font-jetbrain">
@@ -261,86 +350,9 @@
             </div>
         </div>
     </section>
+    <!----------------------------------------------Education Section Ends Here---------------------------------->
 
-
-    <section id="projects" class="projects-section font-jetbrain">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="assets/embedded.png" alt="Project Image 1" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">Baremetal Driver Development</h3>
-                    <p class="project-description">This Project Contains the Process of Writing own Driver for
-                        ARM-Cortex M Microcontrollers</p>
-                    <a href="https://github.com/undefined2001/stmbaremetal.git" target="_blank" class="github-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="assets/free-rtos.png" style="background-color: white;" alt="Project Image 2"
-                    class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">Baremetal Driver & FreeRTOS</h3>
-                    <p class="project-description">This Projects contains all the necessary information for getting
-                        started with FreeRTOS</p>
-                    <a href="https://github.com/undefined2001/STM32F466RE_RTOS.git" target="_blank" class="github-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="assets/tft.png" alt="Project Image 2" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">TFT Display Driver</h3>
-                    <p class="project-description">This projects contains all the necessary API's to use a ST7735 TFT
-                        Display.</p>
-                    <a href="https://github.com/undefined2001/TFT_Driver.git" target="_blank" class="github-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div>
-
-            <!-- Repeat the above project-card block for other projects -->
-        </div>
-    </section>
-    <section id="research" class="research font-jetbrain">
-        <h2 class="section-title">Researches</h2>
-        <div class="research-grid">
-            <div class="research-card">
-                <h3>Efficient Power Management in IoT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, placeat ducimus. Accusantium animi
-                    quisquam ipsum quis illo iste. Ipsa veniam illum qui nemo! Itaque minima totam nobis, voluptates
-                    ratione est.</p>
-                <a href="https://ieee-iot.org/example" class="research-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-link"></i> View Research
-                </a>
-            </div>
-            <div class="research-card">
-                <h3>Real-Time Embedded Systems</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde ad officia non quae culpa
-                    quisquam obcaecati nulla provident placeat, distinctio iure ut quibusdam asperiores dolore aliquam
-                    aperiam sit maxime.</p>
-                <a href="https://esc-conf.org/example" class="research-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-link"></i> View Research
-                </a>
-            </div>
-            <div class="research-card">
-                <h3>Security in Embedded Systems</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, placeat ducimus. Accusantium animi
-                    quisquam ipsum quis illo iste. Ipsa veniam illum qui nemo! Itaque minima totam nobis, voluptates
-                    ratione est.</p>
-                <a href="https://acm-tec.com/example" class="research-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-link"></i> View Research
-                </a>
-            </div>
-        </div>
-    </section>
-
-
-
+    <!----------------------------------------------Contact Section Starts From Here---------------------------------->
     <section id="contact" class="contact font-jetbrain">
         <h2 class="section-title">Contact Me</h2>
         <div class="contact-links">
@@ -360,6 +372,7 @@
             </a>
         </div>
     </section>
+    <!----------------------------------------------Contact Section Ends Here---------------------------------->
 
 
 
